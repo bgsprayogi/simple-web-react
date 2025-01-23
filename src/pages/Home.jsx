@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { homeSection    } from '../data/HomeSection'
+import { homeSection } from '../data/HomeSection'
 import '../styles/Home.css';
 
 
@@ -10,7 +10,7 @@ function Home() {
         <Navbar/>
         <div className='wrapper'>
           <section id="home">
-              <img src=""/>
+              <img src={homeSection.image}/>
               <div className="kolom">
               </div>
           </section>
