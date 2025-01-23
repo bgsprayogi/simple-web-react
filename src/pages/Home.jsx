@@ -28,11 +28,8 @@ function Home() {
           </section>
           {/* Tutors Sections*/}
           <section id="tutors">
-            <div class="tengah">
-                <div class="kolom">
-                    <p class="deskripsi">Our Top Tutors</p>
-                    <h2>Tutors</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, optio!</p>
+            <div className="tengah">
+                <div className="kolom">
                 </div>
             </div>
         </section>
