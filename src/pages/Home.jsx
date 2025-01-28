@@ -3,7 +3,11 @@ import Footer from '../components/Footer'
 import { homeSection } from '../data/HomeSection'
 import { coursesSection } from '../data/CoursesSection'
 import { tutorsSection, tutorsList } from '../data/TutorsSection'
+import { partnersSection } from '../data/PartnersSection'
+
 import Tutors from '../components/Tutors'
+import Partners from '../components/Partners'
+
 
 import parse from 'html-react-parser'
 import '../styles/Home.css';
@@ -38,8 +42,17 @@ function Home() {
                         <Tutors tutorsList={tutorsList} />
                     </div>
           </section>
+          {/* Partners Section */}
+          <section id="partners">
+            <div className="tengah">
+                <div className="kolom">
+                    { parse(partnersSection.content)}
+                </div>
+                <Partners/>
+            </div>
+          </section>
         </div>
-        <Footer/>
+        <Footer/> 
     </>
   )
 }
