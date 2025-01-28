@@ -3,7 +3,7 @@ import Footer from '../components/Footer'
 import { homeSection } from '../data/HomeSection'
 import { coursesSection } from '../data/CoursesSection'
 import { tutorsSection, tutorsList } from '../data/TutorsSection'
-import { partnersSection } from '../data/PartnersSection'
+import { partnersSection, partnersList } from '../data/PartnersSection'
 
 import Tutors from '../components/Tutors'
 import Partners from '../components/Partners'
@@ -48,7 +48,7 @@ function Home() {
                 <div className="kolom">
                     { parse(partnersSection.content)}
                 </div>
-                <Partners/>
+                <Partners partnersList={partnersList}/>
             </div>
           </section>
         </div>
