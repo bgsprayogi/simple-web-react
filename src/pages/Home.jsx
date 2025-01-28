@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { homeSection } from '../data/HomeSection'
 import { coursesSection } from '../data/CoursesSection'
-import { tutorsSection, tutorsList} from '../data/TutorsSection'
+import { tutorsSection, tutorsList } from '../data/TutorsSection'
 import Tutors from '../components/Tutors'
 
 import parse from 'html-react-parser'
@@ -31,13 +31,13 @@ function Home() {
           </section>
           {/* Tutors Sections*/}
           <section id="tutors">
-            <div className="tengah">
-                <div className="kolom">
-                  {parse(tutorsSection.content)}
-                </div>
-                <Tutors tutorList={tutorList} />
-            </div>
-        </section>
+                    <div className="tengah">
+                        <div className="kolom">
+                            {parse(tutorsSection.content)}
+                        </div>
+                        <Tutors tutorsList={tutorsList} />
+                    </div>
+          </section>
         </div>
         <Footer/>
     </>

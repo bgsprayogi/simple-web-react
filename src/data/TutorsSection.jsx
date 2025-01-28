@@ -1,17 +1,16 @@
-export const tutorsSection= {
+export const tutorsSection = {
     content: `<p className="deskripsi">Our Top Tutors</p>
-                    <h2>Tutors</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, optio!</p>`
-
+                            <h2>Tutors</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, optio!</p>`
 }
 
-export const tutorList = [ 
+export const tutorsList = [
     {
         image: 'https://dfu1k3y1rami2.cloudfront.net/wp-content/uploads/2014/07/26195109/2020_cb.jpg',
         name: 'Jason Lee Scott'
     },
     {
-        image: 'https://dfu1k3y1rami2.cloudfront.net/wp-content/uploads/2014/07/26195109/2020_cb.jpghttps://images.ctfassets.net/1wryd5vd9xez/4DxzhQY7WFsbtTkoYntq23/a4a04701649e92a929010a6a860b66bf/https___cdn-images-1.medium.com_max_2000_1_Y6l_FDhxOI1AhjL56dHh8g.jpeg',
+        image: 'https://images.ctfassets.net/1wryd5vd9xez/4DxzhQY7WFsbtTkoYntq23/a4a04701649e92a929010a6a860b66bf/https___cdn-images-1.medium.com_max_2000_1_Y6l_FDhxOI1AhjL56dHh8g.jpeg',
         name: 'John Doe'
     },
     {
