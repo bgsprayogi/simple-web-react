@@ -4,9 +4,11 @@ import { homeSection } from '../data/HomeSection'
 import { coursesSection } from '../data/CoursesSection'
 import { tutorsSection, tutorsList } from '../data/TutorsSection'
 import { partnersSection, partnersList } from '../data/PartnersSection'
+import { contactSection } from '../data/ContactSection'
 
 import Tutors from '../components/Tutors'
 import Partners from '../components/Partners'
+import Contact from '../components/Contact'
 
 
 import parse from 'html-react-parser'
@@ -52,6 +54,8 @@ function Home() {
             </div>
           </section>
         </div>
+
+        <Contact contactSection={contactSection} />
         <Footer/> 
     </>
   )
