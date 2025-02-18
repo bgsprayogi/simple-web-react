@@ -1,20 +1,25 @@
-import '../styles/contact.css'
-import React from 'react'
+import '../styles/Contact.css'
+import parse from 'html-react-parser'
+function Contact(props) {
+    return (
+        <div id="contact">
+            <div className="wrapper">
+                <div className="footer">
+                    {
+                        props.contactSection.map((item, index) => {
+                            return (
+                                <div className="footer-section">
+                                    {parse(item.content)}
+                                </div>
+                            )
+                        })
+                    }
 
-function contact(props) {
-  return (
-    <div id="contact">
-        <div className="wrapper">
-            <div className="footer">
-                <div className="footer-section">
-                <h3>RumahRafif.</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, culpa!</p>
+
                 </div>
             </div>
         </div>
-    </div>
-
-  )
+    )
 }
 
-export default contact
+export default Contact
